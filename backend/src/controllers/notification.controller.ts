@@ -1,5 +1,5 @@
-import { Response } from 'express';
-import { AuthRequest } from '../middlewares/auth.middleware.ts';
+import type { Response } from 'express';
+import type { AuthRequest } from '../middlewares/auth.middleware.ts';
 import { Notification } from '../models/Notification.model.ts';
 
 export async function getMyNotifications(req: AuthRequest, res: Response): Promise<void> {

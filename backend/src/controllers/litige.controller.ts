@@ -1,5 +1,5 @@
-import { Response } from 'express';
-import { AuthRequest } from '../middlewares/auth.middleware.ts';
+import type { Response } from 'express';
+import type { AuthRequest } from '../middlewares/auth.middleware.ts';
 import { Litige } from '../models/Litige.model.ts';
 import { Tontine } from '../models/Tontine.model.ts';
 import { Notification } from '../models/Notification.model.ts';

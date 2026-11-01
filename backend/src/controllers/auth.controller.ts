@@ -1,9 +1,9 @@
-import { Request, Response } from 'express';
+import type { Request, Response } from 'express';
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
 import { User } from '../models/User.model.ts';
 import { RevokedToken } from '../models/RevokedToken.model.ts';
-import { AuthRequest } from '../middlewares/auth.middleware.ts';
+import type { AuthRequest } from '../middlewares/auth.middleware.ts';
 import { logAudit } from '../middlewares/role.middleware.ts';
 import { sendWelcomeEmail } from '../services/email.service.ts';
 

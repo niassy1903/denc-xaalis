@@ -1,4 +1,4 @@
-import { Request, Response, NextFunction } from 'express';
+import type { Request, Response, NextFunction } from 'express';
 
 // In-memory rate limiting store for brute-force protection
 interface RateLimitEntry {

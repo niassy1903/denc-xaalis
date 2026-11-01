@@ -1,6 +1,7 @@
-import { Request, Response, NextFunction } from 'express';
+import type { Request, Response, NextFunction } from 'express';
 import jwt from 'jsonwebtoken';
-import { User, IUserDocument } from '../models/User.model.ts';
+import { User } from '../models/User.model.ts';
+import type { IUserDocument } from '../models/User.model.ts';
 import { RevokedToken } from '../models/RevokedToken.model.ts';
 
 const JWT_SECRET = process.env.JWT_SECRET || 'denc_xaalis_jwt_secret_super_key_2026';

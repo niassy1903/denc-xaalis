@@ -1,5 +1,5 @@
-import { Response } from 'express';
-import { AuthRequest } from '../middlewares/auth.middleware.ts';
+import type { Response } from 'express';
+import type { AuthRequest } from '../middlewares/auth.middleware.ts';
 import { User } from '../models/User.model.ts';
 import { Tontine } from '../models/Tontine.model.ts';
 import { Membre } from '../models/Membre.model.ts';
@@ -449,4 +449,3 @@ export async function updateMembreRoleInTontine(req: AuthRequest, res: Response)
     res.status(500).json({ success: false, message: 'Erreur lors de l\'attribution du rôle', error: error.message });
   }
 }
-

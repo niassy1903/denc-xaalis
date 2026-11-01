@@ -1,5 +1,5 @@
-import { Response, NextFunction } from 'express';
-import { AuthRequest } from './auth.middleware.ts';
+import type { Response, NextFunction } from 'express';
+import type { AuthRequest } from './auth.middleware.ts';
 import { AuditLog } from '../models/AuditLog.model.ts';
 
 export function roleMiddleware(allowedRoles: string[]) {

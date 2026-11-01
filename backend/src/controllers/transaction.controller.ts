@@ -1,5 +1,5 @@
-import { Response } from 'express';
-import { AuthRequest } from '../middlewares/auth.middleware.ts';
+import type { Response } from 'express';
+import type { AuthRequest } from '../middlewares/auth.middleware.ts';
 import { Transaction } from '../models/Transaction.model.ts';
 import { User } from '../models/User.model.ts';
 import { logAudit } from '../middlewares/role.middleware.ts';
