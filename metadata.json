@@ -1,0 +1,6 @@
+{
+  "name": "Denc Xaalis",
+  "description": "Plateforme professionnelle de gestion de tontines et épargne rotative avec back office, gestion des cotisations, tours de collecte et litiges.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
