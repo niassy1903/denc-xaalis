@@ -12,7 +12,10 @@ import {
   IAdminStats,
 } from './types.ts';
 
-const API_BASE_URL = (import.meta as any).env?.VITE_API_URL || '/api/v1';
+const API_ENV = (import.meta as any).env;
+const API_BASE_URL =
+  API_ENV?.VITE_API_URL ||
+  (API_ENV?.PROD ? 'https://denc-xaalis.onrender.com/api/v1' : '/api/v1');
 
 export const apiClient: AxiosInstance = axios.create({
   baseURL: API_BASE_URL,
